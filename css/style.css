@@ -9,11 +9,29 @@ h1{
     font-weight: 700;
 }
 
+body{
+    position: relative;
+}
+
 /*** HEADER ***/
 
 header{
+    border: solid 1px blue;
+}
+
+div#header-div{
     min-height: 100vh;
+    width: 100%;
+    background-image: url(https://unsplash.it/1900/1100);
+    background-size: cover;
     border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    padding: 15%;
+}
+
+#intro-part{
+    margin: 5%;
 }
 
 #mainnav{
