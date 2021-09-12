@@ -44,73 +44,143 @@
 
         </nav>
 
-        <div id="header-div">
+        <div id="header-div" class="container-xl d-flex flex-row align-items-center justify-content-center">
 
-            <div id="intro-part">
+            <div id="grid-container" class="container row align-items-center">
 
-                <h1 id="header-h1">Hello, I'm Alex.</h1>
+                <div id="intro-part" class="col-xs-12 col-xl-8">
 
-                <p id="header-main-desc">I'm from Switzerland.</p>
+                    <h1 id="header-h1">Hello, I'm Alex.</h1>
 
-                <p id="header-second-desc">
-                    I am a junior frontend web developer but strive on becoming fullstack. Learn in progress!<br>
-                    I like to focus mainly on user experience and visual harmony. My goal is to literally become a Swiss army knife : 
-                    <em>being able to create anything I want to.</em>
-                </p>
+                    <p id="header-main-desc">I'm from Switzerland.</p>
 
-                <a class="button" href="#">HIRE ME</a>
-            
+                    <p id="header-second-desc">
+                        I am a junior frontend web developer but strive on becoming fullstack. Learn in progress!<br>
+                        I like to focus mainly on user experience and visual harmony. My goal is to literally become a Swiss army knife : 
+                        <em>being able to create anything I want to.</em>
+                    </p>
+
+                    <a id="hireme-btn" class="button btn btn-lg btn-primary shadow" href="#">HIRE ME</a>
+                
+                </div>
+
+                <div id="photo-div" class="col-xs-12 col-xl-4">
+                    <img src="img/photoblob.png" alt="Photo">
+                </div>
+
             </div>
-
-            <div id="photo-div">
-                <img src="img/photoblob.png" alt="Photo">
-            </div>
-
             
         </div>
 
     </header>
 
+
+
     <main>
 
         <section id="skills">
 
-            <h1 id="skills-h1">
-                This is what I can do.
-            </h1>
+            <div id="skills-section-container" class="container-xl d-flex flex-column justify-content-center align-items-center">
 
-            <p>This is, of course, not definitive. I'm constantly learning something new.</p>
+                <div class="skills-text-container"> 
+                    <h1 id="skills-h1">
+                        This is what I can do.
+                    </h1>
 
-            <div id="skills">
+                    <p class="text-center">This is, of course, not definitive. I'm constantly learning something new.</p>
+                </div> 
 
-                <div class="html-skill skill-unit">
-                    <img src="img/html.png" alt="HTML 5 logo">
-                    <p>HTML 5</p>
-                </div>
 
-                <div class="css-skill skill-unit">
-                    <img src="img/css.png" alt="CSS logo">
-                    <p>CSS 3</p>
-                </div>
 
-                <div class="js-skill skill-unit">
-                    <img src="img/js.png" alt="JavaScript logo">
-                    <p>JavaScript</p>
-                </div>
+                <div id="skills-container" class="d-flex flex-row justify-content-evenly flex-wrap">
 
-                <div class="git-skill skill-unit">
-                    <img src="img/github.png" alt="logo Github">
-                    <p>Git/GitHub</p>
-                </div>
+                    <div class="html-skill skill-unit">
 
-                <div class="wordpress-skill skill-unit">
-                    <img src="img/wordpress.png" alt="Logo Wordpress">
-                    <p>Wordpress</p>
-                </div>
+                        <div class="skill-unit-content">
+                            <img src="img/html.png" alt="HTML 5 logo">
+                        </div>
+                        
+                        <p class="text-center skill-desc">HTML 5</p>
 
-                <div class="ps-skill skill-unit">
-                    <img src="img/photoshop.png" alt="logo Photoshop">
-                    <p>Wordpress</p>
+                    </div>
+
+
+                    <div class="css-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/css.png" alt="CSS logo">
+                        </div>
+
+                        <p class="text-center skill-desc">CSS 3</p>
+
+                    </div>
+
+
+                    <div class="js-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/js.png" alt="JavaScript logo">
+                        </div>
+
+                        <p class="text-center skill-desc">JavaScript</p>
+
+                    </div>
+
+
+                    <div class="git-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/github.png" alt="logo Github">
+                        </div>
+
+                        <p class="text-center skill-desc">Git/GitHub</p>
+
+                    </div>
+
+
+                    <div class="wordpress-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/wordpress.png" alt="Logo Wordpress">
+                        </div>
+
+                        <p class="text-center skill-desc">Wordpress</p>
+
+                    </div>
+
+
+                    <div class="ps-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/photoshop.png" alt="logo Photoshop">
+                        </div>
+
+                        <p class="text-center skill-desc">Photoshop</p>
+
+                    </div>
+
+
+                    <div class="bs-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/bootstrap.png" alt="logo Bootstrap">
+                        </div>
+
+                        <p class="text-center skill-desc">Bootstrap</p>
+
+                    </div>
+
+
+                    <div class="rb-skill skill-unit">
+
+                        <div class="skill-unit-content">
+                            <img src="img/ruby.png" alt="logo Ruby">
+                        </div>
+
+                        <p class="text-center skill-desc">Ruby</p>
+    
+                    </div>
+
                 </div>
 
             </div>
