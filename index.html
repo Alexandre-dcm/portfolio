@@ -83,8 +83,8 @@
             <div id="skills-section-container" class="container-xl d-flex flex-column justify-content-center align-items-center">
 
                 <div class="skills-text-container"> 
-                    <h1 id="skills-h1">
-                        This is what I can do.
+                    <h1 class="skills-h1">
+                        This is what I can work with.
                     </h1>
 
                     <p class="text-center">This is, of course, not definitive. I'm constantly learning something new.</p>
@@ -92,7 +92,7 @@
 
 
 
-                <div id="skills-container" class="d-flex flex-row justify-content-evenly flex-wrap">
+                <div class="skills-container d-flex flex-row justify-content-evenly flex-wrap">
 
                     <div class="html-skill skill-unit">
 
@@ -189,106 +189,244 @@
             
         </section>
 
+        <section id="learning-skills">
+
+            <div id="skills-section-container" class="container-xl d-flex flex-column justify-content-center align-items-center">
+
+                <div class="skills-text-container"> 
+                    <h1 class="skills-h1">
+                        This is what I want to master.
+                    </h1>
+
+                    <p class="text-center">Maybe I didn't even start learning one of these. But I'm doing my best, I promise.</p>
+                </div> 
+
+
+
+                <div class="skills-container d-flex flex-row justify-content-evenly flex-wrap">
+
+                    <div class="php-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/php.png" alt="PHP logo">
+                        </div>
+                        
+                        <p class="text-center skill-desc">PHP</p>
+
+                    </div>
+
+
+                    <div class="ror-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/ror.png" alt="Ruby on Rails logo">
+                        </div>
+
+                        <p class="text-center skill-desc">Ruby on Rails</p>
+
+                    </div>
+
+
+                    <div class="mysql-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/mysql.png" alt="MySQL logo">
+                        </div>
+
+                        <p class="text-center skill-desc">MySQL</p>
+
+                    </div>
+
+
+                    <div class="react-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/react.png" alt="logo React">
+                        </div>
+
+                        <p class="text-center skill-desc">React</p>
+
+                    </div>
+
+
+                    <div class="jquery-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/jquery.png" alt="Logo jQuery">
+                        </div>
+
+                        <p class="text-center skill-desc">jQuery</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            
+        </section>
+
 
 
         <section id="resume">
 
-            <h1>Résumé.</h1>
+            <div id="resume-div" class="container-xl">
 
-            <div id="training">
+                <h1>Résumé.</h1>
 
-                <h2>Training</h2>
+                <div class="training-div row">
 
+                    <div id="training" class="col col-xs-12 col-md-6">
 
-                    <div class="training-schools">
+                        <h2>Training</h2>
 
-                        <h3>Schools</h3>
+                        <div class="training-schools my-5">
 
-                            <div class="wagon-training school">
-                                <img src="img/lewagon.png" alt="logo Le wagon">
-                                <h4>Le Wagon</h4>
-                                <p class="training-desc">
-                                    Fullstack Developer bootcamp
-                                </p>
-                                <p class="training-date">Oct. 2021 - Apr. 2022</p>
+                            <h3>Schools</h3>
+
+                            <div class="wagon-training school resume-card">
+
+                                <div class="resume-card-img-div"> 
+                                    <img src="img/lewagon.png" alt="logo Le wagon">
+                                </div>
+
+                                <div class="resume-card-content">
+                                    <h4>Le Wagon</h4>
+
+                                    <div class="resume-card-desc">
+                                        <p class="training-desc">
+                                            Fullstack Web developer bootcamp
+                                        </p>
+                                        <p class="training-date">Oct. 2021 - Apr. 2022</p>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="klubschule-training school">
-                                <img src="img/ecoleclub.png" alt="logo Ecole-club">
-                                <h4>Ecole-Club</h4>
-                                <p class="training-desc">
-                                    Webdesigner training with Diploma
-                                </p>
-                                <p class="training-date">Sept. 2020 - June 2021</p>                           
+                            <div class="klubschule-training school resume-card">
+
+                                <div class="resume-card-img-div">
+                                    <img src="img/ecoleclub.png" alt="logo Ecole-club">
+                                </div>
+
+                                <div class="resume-card-content">
+                                    <h4>Ecole-Club</h4>
+
+                                    <div class="resume-card-desc">
+                                        <p class="training-desc">
+                                            Webdesign training with Diploma. EDUQUA Label certified.
+                                        </p>
+                                        <p class="training-date">Sept. 2020 - June 2021</p>
+                                    </div>
+
+                                </div>
+
                             </div>
+
+                        </div>
+
+                        <div class="training-self my-5">
+
+                            <h3>Self-training</h3>
+
+                            <div class="codecademy-training self-training resume-card">
+
+                                <div class="resume-card-img-div">
+                                    <img src="img/codecademy.png" alt="logo Codecademy">
+                                </div>
+
+                                <div class="resume-card-content">
+                                    <h4>Codecademy</h4>
+
+                                    <div class="resume-card-desc">
+                                        <p class="training-desc">
+                                            Advanced HTML, CSS & Javascript full completed courses with exercices.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="udemy-training self-training resume-card">
+
+                                <div class="resume-card-img-div">
+                                    <img src="img/udemy.png" alt="Logo Udemy">
+                                </div>
+
+                                <div class="resume-card-content">
+                                    <h4>Udemy</h4>
+
+                                    <div class="resume-card-desc">
+                                        <p class="training-desc">
+                                            The Web Developer bootcamp : HTML, CSS, Javascript, Wordpress, and more.
+                                        </p>     
+                                    </div> 
+
+                                </div> 
+
+                            </div>
+
+                            <div class="codingame-training self-training resume-card">
+
+                                <div class="resume-card-img-div">
+                                    <img src="img/codingame.png" alt="logo Codingame">
+                                </div>
+
+                                <div class="resume-card-content">
+                                    <h4>CodinGame</h4>
+
+                                    <div class="resume-card-desc">
+                                        <p class="training-desc">
+                                            Online multiplayer coding website. Problem solving, challenges and more.
+                                        </p>
+                                    </div>
+
+                                </div> 
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                    <div class="training-self">
 
-                        <h3>Self-training</h3>
+                    <div id="work-exp" class="col col-xs-12 col-md-6">
 
-                            <div class="codecademy-training self-training">
-                                <img src="img/codecademy.png" alt="logo Codecademy">
-                                <h4>Codecademy</h4>
-                                <p class="training-desc">
-                                    Advanced HTML, CSS & Javascript full completed courses with exercices
-                                </p>
-                            </div>
+                        <h2>Work Experience</h2>
 
-                            <div class="udemy-training self-training">
-                                <img src="img/udemy.png" alt="Logo Udemy">
-                                <h4>Udemy</h4>
-                                <p class="training-desc">
-                                    The Web Developer bootcamp : HTML, CSS, Javascript, Wordpress, and more.
-                                </p>                     
-                            </div>
+                        <div class="myetic resume-work-card my-5">
 
-                            <div class="codingame-training self-training">
-                                <img src="img/codingame.png" alt="logo Codingame">
-                                <h4>CodinGame</h4>
-                                <p class="training-desc">
-                                    CodingGame.
-                                </p>                         
-                            </div>
+                            <img src="img/myetic.png" alt="Logo myetic">
+                            <h4>MyEtic</h4>
+                            <p class="training-desc">
+                                Trainee Web Designer with Wordpress
+                            </p>
+                            <p class="training-date"> 
+                                Oct. 2020 - November 2020
+                            </p>                   
+
+                        </div>
+
+                        <div class="vizivap resume-work-card">
+
+                            <img src="img/vizivap.png" alt="logo vizivap">
+                            <h4>Vizivap</h4>
+                            <p class="training-desc">
+                                Creation of a complete website, logo & e-shop with Wix and Stripe.
+                            </p>
+                            <p class="training-date"> 
+                                September. 2020 - November 2020
+                            </p>
+
+                        </div>
 
                     </div>
 
-            </div>
-
-
-            <div id="work-exp">
-
-                <h2>Work Experience</h2>
-
-                <div class="myetic">
-
-                    <img src="img/myetic.png" alt="Logo myetic">
-                    <h4>MyEtic</h4>
-                    <p class="training-desc">
-                        Trainee Web Designer with Wordpress
-                    </p>
-                    <p class="training-date"> 
-                        Oct. 2020 - November 2020
-                    </p>                   
-
-                </div>
-
-                <div class="vizivap">
-
-                    <img src="img/vizivap.png" alt="logo vizivap">
-                    <h4>Vizivap</h4>
-                    <p class="training-desc">
-                        Creation of a complete website, logo & e-shop with Wix and Stripe.
-                    </p>
-                    <p class="training-date"> 
-                        September. 2020 - November 2020
-                    </p>
-
                 </div>
 
             </div>
-
 
         </section>
 
