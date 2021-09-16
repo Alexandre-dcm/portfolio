@@ -18,6 +18,9 @@ section{
     margin: 50px 0;
 }
 
+.test{
+    border: 1px solid red;
+}
 
 
 /*** HEADER ***/
@@ -130,17 +133,23 @@ section h1{
 
 /*** RESUME ***/
 
+#resume{
+    background: rgb(255,193,234);
+    background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
+    padding: 60px 0;
+}
+
 .resume-card{
-    min-width: 330px;
-    width: 80%;
+    width: 100%;
+    min-width: 100%;
     height: 120px;
-    border: solid 1px rgb(223, 223, 223);
     border-radius: 10px;
     box-shadow: 2px 2px 5px grey;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
-    padding: 10px;
+    margin: 25px 0;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .resume-card:hover, .skill-unit:hover{
@@ -153,20 +162,25 @@ section h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: calc(35% - 10px) ;
+    border-right: 1px solid rgb(218, 218, 218);
+    flex-basis: 130px; ;
 }
 
 .resume-card img{
-    width: calc(100% - 20px);
+    width: calc(90% - 20px);
+    max-width: max-content;
     height: auto;
-    -webkit-filter: drop-shadow(2px 2px 4px #666); 
-	filter: drop-shadow(2px 2px 4px #666);
+    -webkit-filter: drop-shadow(2px 2px 2px #666); 
+	filter: drop-shadow(2px 2px 2px #666);
 }
 
 .resume-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-basis: 65%;
-    border-left: 1px solid rgb(218, 218, 218);
-    padding-left: 10px;
+    margin: 5px;
 }
 
 .resume-card-content h4{
@@ -177,7 +191,7 @@ section h1{
 p.training-date{
     font-size: 0.9em;
     font-style: italic;
-    color: rgb(212, 113, 0);
+    color: rgb(98, 122, 255);
 }
 
 
@@ -205,6 +219,51 @@ p.training-date{
     font-weight: bold;
 }
 
+#work-exp h2{
+    margin-bottom: 50px;
+}
+
+.workexp-logo-div{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -70px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: calc(50% - 100px);
+    border: solid 1px rgb(223, 223, 223);
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workexp-logo-div img{
+    width: 90%;
+    height: auto;
+}
+
+.workexp-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resume-work-card{ 
+    min-width: 330px;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+}
 
 /*** MEDIA QUERIES ***/
 
@@ -220,7 +279,7 @@ p.training-date{
 @media screen and (max-width: 768px){
 
     header{
-        height: auto;
+        height: auto;;
         padding: 40px 0;
     }
 
