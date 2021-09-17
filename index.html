@@ -35,10 +35,10 @@
 
             <div id="mainnav">
 
-                <a href="#">ABOUT</a>
-                <a href="#">SKILLS</a>
-                <a href="#">RÉSUMÉ</a>
-                <a href="#">CONTACT</a>
+                <a href="#header">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#resume">RÉSUMÉ</a>
+                <a href="#contact">CONTACT</a>
 
             </div>
 
@@ -55,13 +55,19 @@
                     <p id="header-main-desc">I'm from Switzerland.</p>
 
                     <p id="header-second-desc">
-                        I am a junior frontend web developer but strive on becoming fullstack. Learn in progress!<br>
+                        I am a junior frontend web developer but strive on becoming fullstack. Learn in progress!<br><br>
                         I like to focus mainly on user experience and visual harmony. My goal is to literally become a Swiss army knife : 
                         <em>being able to create anything I want to.</em>
                     </p>
 
-                    <a id="hireme-btn" class="button btn btn-lg btn-primary shadow" href="#">HIRE ME</a>
-                
+                    <div class="hireme-btn-container shadow">
+                        <a id="hireme-btn" href="#contact">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <p>HIRE ME !</p>  
+                            </div>
+                        </a>
+                    </div>
+                    
                 </div>
 
                 <div id="photo-div" class="col-xs-12 col-lg-4">
@@ -281,42 +287,56 @@
 
                         <h2>Training</h2>
 
-                        <div class="training-schools test my-5">
+                        <div class="training-schools my-5">
 
                             <h3>Schools</h3>
 
                             <div class="wagon-training school resume-card">
 
-                                <div class="resume-card-img-div"> 
-                                    <img src="img/lewagon.png" alt="logo Le wagon">
-                                </div>
+                                <a href="https://www.lewagon.com/" target="_blank">
 
-                                <div class="resume-card-content">
-                                    <h4>Le Wagon</h4>
+                                    <div class="resume-card-link-container">
 
-                                        <p class="training-desc">
-                                            Fullstack Web developer bootcamp
-                                        </p>
-                                        <p class="training-date">Oct. 2021 - Apr. 2022</p>
-                                </div>
+                                        <div class="resume-card-img-div"> 
+                                            <img src="img/lewagon.png" alt="logo Le wagon">
+                                        </div>
+
+                                        <div class="resume-card-content">
+                                            <h4>Le Wagon</h4>
+                                            <p class="training-desc">
+                                                Fullstack Web developer bootcamp
+                                            </p>
+                                            <p class="training-date">Oct. 2021 - Apr. 2022</p>
+                                        </div>
+
+                                    </div>
+
+                                </a>
 
                             </div>
 
+
                             <div class="klubschule-training school resume-card">
 
-                                <div class="resume-card-img-div">
-                                    <img src="img/ecoleclub.png" alt="logo Ecole-club">
-                                </div>
+                                <a href="https://www.ecole-club.ch/" target="_blank">
 
-                                <div class="resume-card-content">
+                                    <div class="resume-card-link-container">
 
-                                    <h4>Ecole-Club</h4>
-                                        <p class="training-desc">
-                                            Webdesign training with Diploma. EDUQUA Label certified.
-                                        </p>
-                                        <p class="training-date">Sept. 2020 - June 2021</p>
+                                        <div class="resume-card-img-div">
+                                            <img src="img/ecoleclub.png" alt="logo Ecole-club">
+                                        </div>
 
-                                </div>
+                                        <div class="resume-card-content">
+                                            <h4>Ecole-Club</h4>
+                                            <p class="training-desc">
+                                                Webdesign training with Diploma. EDUQUA Label certified.
+                                            </p>
+                                            <p class="training-date">Sept. 2020 - June 2021</p>
+                                        </div>
+
+                                    </div>
+
+                                </a>
 
                             </div>
 
@@ -328,49 +348,72 @@
 
                             <div class="codecademy-training self-training resume-card">
 
-                                <div class="resume-card-img-div">
-                                    <img src="img/codecademy.png" alt="logo Codecademy">
-                                </div>
+                                <a href="https://www.codecademy.com/" target="_blank">
 
-                                <div class="resume-card-content">
-                                    <h4>Codecademy</h4>
-                                        <p class="training-desc">
-                                            Advanced HTML, CSS & Javascript full completed courses with exercices.
-                                        </p>
+                                    <div class="resume-card-link-container">
 
-                                </div>
+                                        <div class="resume-card-img-div">
+                                            <img src="img/codecademy.png" alt="logo Codecademy">
+                                        </div>
+
+                                        <div class="resume-card-content">
+                                            <h4>Codecademy</h4>
+                                            <p class="training-desc">
+                                                Advanced HTML, CSS & Javascript full completed courses with exercices.
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </a>
 
                             </div>
 
                             <div class="udemy-training self-training resume-card">
 
-                                <div class="resume-card-img-div">
-                                    <img src="img/udemy.png" alt="Logo Udemy">
-                                </div>
+                                <a href="https://www.udemy.com/" target="_blank">
 
-                                <div class="resume-card-content">
-                                    <h4>Udemy</h4>
-                                        <p class="training-desc">
-                                            The Web Developer bootcamp : HTML, CSS, Javascript, Wordpress, and more.
-                                        </p>     
+                                    <div class="resume-card-link-container">
 
-                                </div> 
+                                        <div class="resume-card-img-div">
+                                            <img src="img/udemy.png" alt="Logo Udemy">
+                                        </div>
+
+                                        <div class="resume-card-content">
+                                            <h4>Udemy</h4>
+                                                <p class="training-desc">
+                                                    The Web Developer bootcamp : HTML, CSS, Javascript, Wordpress, and more.
+                                                </p>     
+
+                                        </div> 
+
+                                    </div>
+
+                                </a>
 
                             </div>
 
                             <div class="codingame-training self-training resume-card">
 
-                                <div class="resume-card-img-div">
-                                    <img src="img/codingame.png" alt="logo Codingame">
-                                </div>
+                                <a href="https://www.codingame.com/" target="_blank">
 
-                                <div class="resume-card-content">
-                                    <h4>CodinGame</h4>
-                                        <p class="training-desc">
-                                            Online multiplayer coding website. Problem solving, challenges and more.
-                                        </p>
+                                    <div class="resume-card-link-container">
 
-                                </div> 
+                                        <div class="resume-card-img-div">
+                                            <img src="img/codingame.png" alt="logo Codingame">
+                                        </div>
+
+                                        <div class="resume-card-content">
+                                            <h4>CodinGame</h4>
+                                                <p class="training-desc">
+                                                    Online multiplayer coding website. Problem solving, challenges and more.
+                                                </p>
+
+                                        </div> 
+
+                                    </div>
+
+                                </a>
 
                             </div>
 
@@ -384,7 +427,7 @@
                         <h2>Work Experience</h2>
 
 
-                        <div class="workexp-container test">
+                        <div class="workexp-container">
 
                             <div class="myetic resume-work-card">
 
@@ -392,33 +435,63 @@
                                     <img src="img/myetic.png" alt="Logo myetic">
                                 </div>
 
-                                <div class="workexp-content-div">
-                                    <h4>MyEtic</h4>
+                                <div class="workexp-content-div d-flex justify-content-between">
 
-                                    <p class="training-desc">
-                                        Trainee Web Designer with Wordpress
-                                    </p>
-                                    <p class="training-date"> 
-                                        Oct. 2020 - November 2020
-                                    </p>
+                                    <div class="workexp-desc d-flex flex-column justify-content-between p-2">
+                                        <h4>MyEtic</h4>
+
+                                        <p class="training-desc">
+                                            Trainee Web Designer with Wordpress.
+                                        </p>
+
+                                        <p class="training-date"> 
+                                            Oct. 2020 - November 2020
+                                        </p>
+                                        <p class="training-loc">
+                                            Bordeaux, France.
+                                        </p>
+                                    </div>
+
+                                        <ul class="training-tasks">
+                                            <li>Managing and creating databases</li>
+                                            <li>Wordpress integrations</li>
+                                            <li>Customer prospection</li>
+                                            <li>Web design</li>
+                                        </ul>
+
                                 </div>          
 
                             </div>
 
                             <div class="vizivap resume-work-card">
 
-                                <div class="workexp-logo-div test">
+                                <div class="workexp-logo-div">
                                     <img src="img/vizivap.png" alt="logo vizivap">
                                 </div>
 
-                                <div class="workexp-content-div">
-                                    <h4>Vizivap</h4>
-                                    <p class="training-desc">
-                                        Creation of a complete website, logo & e-shop with Wix and Stripe.
-                                    </p>
-                                    <p class="training-date"> 
-                                        September. 2020 - November 2020
-                                    </p>
+                                <div class="workexp-content-div d-flex justify-content-between">
+
+                                    <div class="workexp-desc d-flex flex-column justify-content-between p-2">
+                                        <h4>Vizivap</h4>
+                                        <p class="training-desc">
+                                            E-cigarettes and accessories shopping website. It is now offline due to inactivity.
+                                        </p>
+
+                                        <p class="training-date"> 
+                                            September. 2020 - November 2020
+                                        </p>
+                                        <p class="training-loc">
+                                            Bordeaux, France.
+                                        </p>
+                                    </div>
+
+                                    <ul class="training-tasks p-2">
+                                        <li>Complete Website creation</li>
+                                        <li>Corporate identity</li>
+                                        <li>Stripe payment plug-in integration</li>
+                                        <li>Products database creation</li>
+                                    </ul>
+
                                 </div>
 
                             </div>
@@ -437,8 +510,16 @@
 
         <section id="contact">
 
+            <div class="container-xl">
+
+                <h1>Get in touch with me.</h1>
+                <p class="text-center">I reply pretty fast.</p>
 
 
+
+                <div id="wufoo-zbp36ju1mfl2t9"> Fill out my <a href="https://hanghalze.wufoo.com/forms/zbp36ju1mfl2t9">online form</a>. </div> <script type="text/javascript"> var zbp36ju1mfl2t9; (function(d, t) { var s = d.createElement(t), options = { 'userName':'hanghalze', 'formHash':'zbp36ju1mfl2t9', 'autoResize':true, 'height':'580', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { zbp36ju1mfl2t9 = new WufooForm(); zbp36ju1mfl2t9.initialize(options); zbp36ju1mfl2t9.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+            </div>
+        
         </section>
 
 
@@ -446,8 +527,10 @@
 
     <footer>
 
-        <div id="footer-div">
+        <div id="footer-div" class="container-xl">
 
+            <p class="text-center"><span class="footeryear">2021</span><br>
+                Built and Designed by Alexandre Da Costa Monteiro :).</p>
 
         </div>
 
