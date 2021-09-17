@@ -1,5 +1,25 @@
 nav{
     display: block;
     margin: 0 auto;
-    height: 50px;
+    width: 60%;
+    height: 6vh;
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+    color: white;
+
+}
+
+div#mainnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#navlinks{
+    flex-basis: 65%;
+}
+
+ul#navlinks-list{
+    display: flex;
+    justify-content: space-between;
 }
