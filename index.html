@@ -35,13 +35,16 @@
 
             <div id="mainnav">
 
-                <p class="website-title">My Portfolio.</p>
+                <div class="nav-header">
+                    <p>My Portfolio.</p>
+                    <button id="nav-toggle">X</button>
+                </div>
 
-                <div id="navlinks">
-                    <ul id="navlinks-list" class="test">
+                <div id="navlinks" class="">
+                    <ul id="navlinks-list" class="">
                         <li><a href="#header">ABOUT</a></li>
                         <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#resume">RÉSUMÉ</a</li>>
+                        <li><a href="#resume">RÉSUMÉ</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>  
                 </div>
@@ -99,7 +102,7 @@
                         This is what I can work with.
                     </h1>
 
-                    <p class="text-center">This is, of course, not definitive. I'm constantly learning something new.</p>
+                    <p class="text-center skills-h1-desc">This is, of course, not definitive. I'm constantly learning something new.</p>
                 </div> 
 
 
@@ -198,19 +201,14 @@
             </div>
 
 
-            
-        </section>
-
-        <section id="learning-skills">
-
             <div id="skills-section-container" class="container-xl d-flex flex-column justify-content-center align-items-center">
 
                 <div class="skills-text-container"> 
                     <h1 class="skills-h1">
-                        This is what I want to master.
+                        This is what I'm learning.
                     </h1>
 
-                    <p class="text-center">Maybe I didn't even start learning one of these. But I'm doing my best, I promise.</p>
+                    <p class="text-center skills-h1-desc">Maybe I didn't even start learning one of these. But I'm doing my best, I promise.</p>
                 </div> 
 
 
@@ -271,6 +269,16 @@
 
                     </div>
 
+                    <div class="python-skill skill-unit">
+
+                        <div class="l-skill-unit-content">
+                            <img src="img/python.png" alt="Logo Python">
+                        </div>
+
+                        <p class="text-center skill-desc">Python</p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -289,7 +297,7 @@
 
                 <div class="training-div row">
 
-                    <div id="training" class="col col-sm-12 col-md-6">
+                    <div id="training" class="col col-sm-12 col-md-6 ">
 
                         <h2>Training</h2>
 
@@ -441,9 +449,10 @@
                                     <img src="img/myetic.png" alt="Logo myetic">
                                 </div>
 
-                                <div class="workexp-content-div d-flex justify-content-between">
+                                <div class="workexp-content-div">
 
                                     <div class="workexp-desc d-flex flex-column justify-content-between p-2">
+
                                         <h4>MyEtic</h4>
 
                                         <p class="training-desc">
@@ -456,31 +465,36 @@
                                         <p class="training-loc">
                                             Bordeaux, France.
                                         </p>
-                                    </div>
-
+                                        
                                         <ul class="training-tasks">
                                             <li>Managing and creating databases</li>
                                             <li>Wordpress integrations</li>
                                             <li>Customer prospection</li>
                                             <li>Web design</li>
                                         </ul>
+                                        
+                                    </div>
 
                                 </div>          
 
                             </div>
 
+
+
                             <div class="vizivap resume-work-card">
 
                                 <div class="workexp-logo-div">
-                                    <img src="img/vizivap.png" alt="logo vizivap">
+                                    <img src="img/vizivap.png" alt="Logo Vizivap">
                                 </div>
 
-                                <div class="workexp-content-div d-flex justify-content-between">
+                                <div class="workexp-content-div">
 
                                     <div class="workexp-desc d-flex flex-column justify-content-between p-2">
+
                                         <h4>Vizivap</h4>
+
                                         <p class="training-desc">
-                                            E-cigarettes and accessories shopping website. It is now offline due to inactivity.
+                                            E-cigarettes and accessories shopping website.
                                         </p>
 
                                         <p class="training-date"> 
@@ -489,16 +503,17 @@
                                         <p class="training-loc">
                                             Bordeaux, France.
                                         </p>
+                                        
+                                        <ul class="training-tasks">
+                                            <li>Complete Website creation</li>
+                                            <li>Corporate identity</li>
+                                            <li>Stripe payment plug-in integration</li>
+                                            <li>Products database creation</li>
+                                        </ul>
+                                        
                                     </div>
 
-                                    <ul class="training-tasks p-2">
-                                        <li>Complete Website creation</li>
-                                        <li>Corporate identity</li>
-                                        <li>Stripe payment plug-in integration</li>
-                                        <li>Products database creation</li>
-                                    </ul>
-
-                                </div>
+                                </div>          
 
                             </div>
 
@@ -541,5 +556,7 @@
         </div>
 
     </footer>
+
+    <script src="js/app.js"></script>
 
 </body>
