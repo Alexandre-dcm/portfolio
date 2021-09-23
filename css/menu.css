@@ -1,23 +1,33 @@
+
 nav{
+    width: 80%;
+    margin: 0 auto;
+}
+
+div#mainnav{
     display: block;
-    margin: 0 auto 20px auto;
-    width: 60%;
+    margin: 0 auto;
+    width: 80%;
     height: 50px;
-    border-radius: 50px;
-    border: solid 3px;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+    border-left: solid 3px;
     border-color: rgb(43, 43, 43);
-    background-color: rgba(30, 30, 30, 0.8);
+    background-color: rgba(30, 30, 30, 0.5);
     color: white;
     box-shadow: 2px 2px 5px grey;
-} 
-
- div#mainnav{
     display: flex;
     justify-content: space-around;
+    position: relative;
 } 
+
 
 #mainnav{
     height: 100%;
+}
+
+#nav-toggle{
+    display: none;
 }
 
 div#navlinks{
@@ -43,34 +53,21 @@ div#navlinks{
     justify-content: space-between;
 }
 
- #nav-toggle{
-    display: none;
-}
 
 
 /*** RESPONSIVE ***/
 
-.show-links{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 100vh;
-    position: absolute;
-    top: 50px;
-    background-color: grey;
-}
+@media screen and (max-width: 992px){
 
-.mobilenav{
-    display: block;
-    width: 100%;
-    height: 60px;
-    border: solid 3px;
-    border-color: rgb(43, 43, 43);
-    background-color: rgba(30, 30, 30, 0.8);
-    color: white;
-    box-shadow: 2px 2px 5px grey;
-    position: relative;
+
+
+   /*  #navlinks-list{
+        position: absolute;
+        top : 50px;
+        height: 100vh;
+        width: 50%;
+        background-color: blue;
+    }  */
+
 }
 

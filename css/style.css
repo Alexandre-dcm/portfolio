@@ -2,6 +2,8 @@
 
 html{
     font-family: 'Oxygen', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -27,7 +29,33 @@ section{
 }
 
 a:hover{
-    color: white;
+    color: rgb(255, 101, 101);
+}
+
+.underline {
+    height: 2px;
+    width: 9em;
+    background: rgb(255, 189, 66);
+    margin: 0 auto;
+}
+
+.underline2 {
+    height: 2px;
+    width: 9em;
+    background: rgb(255, 172, 117);
+    margin: 0 auto;
+}
+.underline3 {
+    height: 2px;
+    width: 9em;
+    background: rgb(255, 142, 142);
+    margin: 0 auto;
+}
+.underline4 {
+    height: 2px;
+    width: 9em;
+    background: rgb(255, 125, 85);
+    margin: 0 auto;
 }
 
 
@@ -37,11 +65,12 @@ a:hover{
 header{
     position: relative;
     height: 100vh;
+    min-height: 750px;
     width: 100%;
     background: rgb(255,193,234);
     background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
     background-size: cover;
-    padding: 20px 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     text-shadow: 2px 2px 7px rgba(112, 112, 112, 0.4);
 }
 
@@ -60,7 +89,7 @@ header{
     background: rgb(255, 200, 89);
     color: rgb(34, 34, 34);
     border-radius: 5px;
-    border: 2px solid rgb(44, 44, 44);
+    border: 1px solid rgb(44, 44, 44);
 }
 
 .hireme-btn-container p{  
@@ -106,6 +135,7 @@ section#skills{
     background-color: rgb(43, 43, 43);
     color: white;
     height: 100vh;
+    min-height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +162,6 @@ div.skill-unit{
 }
 
 .skill-unit-content{
-    border: solid 1px rgb(223, 223, 223);
     border-radius: 10px;
     box-shadow: 2px 2px 5px grey;
     width: 120px;
@@ -148,7 +177,6 @@ div.skill-unit{
 }
 
 .l-skill-unit-content{
-    border: solid 1px rgb(223, 223, 223);
     border-radius: 10px;
     box-shadow: 2px 2px 5px grey;
     width: 140px;
@@ -185,17 +213,20 @@ section h1{
 
 #resume{
     padding: 60px 0;
+    background-color: #ffffff;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #f1f1f1 0, #f1f1f1 1px, #ffffff 0, #ffffff 50%);
 }
 
 .resume-card{
     width: 80%;
-    min-width: 350px;
     height: 120px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
     margin: 25px 0;
     padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid lightgrey;
+    background: rgb(255,193,234);
+    background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
+    position: relative;
 }
 
 .resume-card-link-container{
@@ -204,17 +235,60 @@ section h1{
     height: 100%;
 }
 
-.resume-card:hover, .skill-unit:hover, .resume-work-card:hover{
-    transform: scale(1.05);
-    transition : 0.1s ease-in-out;
+.resume-card:hover, .resume-work-card:hover{
+    bottom: 4px;
+    right: 4px;
+}
 
+.wagon-training:hover{
+    box-shadow: 4px 4px red;
+    border-bottom: none;
+    border-right: none;
+}
+
+.klubschule-training:hover{
+    box-shadow: 4px 4px #005CA9;
+    border-bottom: none;
+    border-right: none;
+}
+.codecademy-training:hover{
+    box-shadow: 4px 4px #204056;
+    border-bottom: none;
+    border-right: none;
+}
+.udemy-training:hover{
+    box-shadow: 4px 4px #ED5252;
+    border-bottom: none;
+    border-right: none;
+}
+.codingame-training:hover{
+    box-shadow: 4px 4px #F2BB13;
+    border-bottom: none;
+    border-right: none;
+}
+.myetic:hover{
+    box-shadow: 4px 4px #221D19;
+    border-bottom: none;
+    border-right: none;
+    cursor: default;
+}
+.vizivap:hover{
+    box-shadow: 4px 4px #FE6900;
+    border-bottom: none;
+    border-right: none;
+    cursor: default;
+}
+
+.skill-unit:hover{
+    transform: scale(1.05);
+    transition-duration: 0.1s;
 }
 
 .resume-card-img-div{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgb(255, 255, 255);
     flex-basis: 130px;
 }
 
@@ -243,7 +317,7 @@ section h1{
 p.training-date{
     font-size: 0.9em;
     font-style: italic;
-    color: white;
+    color: rgb(114, 114, 114);
 }
 
 
@@ -282,7 +356,7 @@ p.training-date{
     align-items: center;
     justify-content: center;
     filter: drop-shadow(5px 5px 5px rgba(43, 43, 43, 0.6));
-    border-right: 1px solid rgb(218, 218, 218);
+    border-right: 1px solid rgb(255, 255, 255);
 }
 
 .workexp-logo-div img{
@@ -311,9 +385,13 @@ p.training-date{
 }
 
 .workexp-desc{
-    width: 100%;
+    width: calc(100% - 25px);
     height: 100%;
     margin-left: 25px;
+}
+
+.workexp-desc > *{
+    padding-bottom: 7px;
 }
 
 .workexp-content-div h4{
@@ -330,15 +408,16 @@ p.training-date{
     min-width: 330px;
     width: 100%;
     height: 300px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     padding: 10px 0;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgb(255,193,234);
+    background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
     margin: 70px 0;
+    border: 1px solid lightgrey;
+    position: relative;
 }
 
 /*** CONTACT ***/
@@ -386,11 +465,16 @@ span.footeryear{
 
 @media screen and (max-width: 768px){
 
+    p{
+        font-size: 0.9em;
+    }
+
     header{
-        height: auto;;
         padding: 40px 0;
         text-align: center;
+        height: auto;
     }
+
 
     #intro-part{
         display: flex;
@@ -403,16 +487,51 @@ span.footeryear{
         margin-bottom: 10%;
     }
 
+    section h1{
+        font-size: 3em;
+    }
+
     h1#header-h1{
-        font-size: 5rem;
+        font-size: 5em;
     }
 
     .resume-card{
         width: 100%;
     }
 
+    .resume-card-img-div{
+        width: 15%;
+        min-width: 100px;
+    }
+
+    .resume-work-card{
+        height: auto;
+    }
+
+    .workexp-container{
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+
     section#skills{
         height: auto;
     }
+
 }
 
+@media screen and (max-width: 350px){
+
+    .workexp-logo-div{
+        display: none;
+    }
+
+    .resume-work-card{
+        width: 100%;
+        min-width: auto;
+    }
+
+
+}
