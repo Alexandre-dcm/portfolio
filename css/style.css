@@ -114,7 +114,6 @@ header{
 }
 
 
-
 #photo-div img{
     filter: drop-shadow(5px 5px 5px rgba(43, 43, 43, 0.6));
     display: block;
@@ -122,6 +121,8 @@ header{
     width: 100%;
     max-width: 400px;
     height: auto;
+    
+    
 }
 
 h1#header-h1{
