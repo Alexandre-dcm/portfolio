@@ -2,7 +2,6 @@
 
 html{
     font-family: 'Oxygen', sans-serif;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -13,6 +12,7 @@ h1{
 
 body{
     position: relative;
+    overflow-x: hidden;
 }
 
 section{
@@ -59,6 +59,8 @@ a:hover{
 }
 
 
+
+
 /*** HEADER ***/
 
 
@@ -86,10 +88,16 @@ header{
 .hireme-btn-container{
     height: 50px;
     width: 150px;
-    background: rgb(255, 200, 89);
-    color: rgb(34, 34, 34);
-    border-radius: 5px;
-    border: 1px solid rgb(44, 44, 44);
+    background: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
+    position: relative;
+    border: 2px solid rgb(255, 255, 255) ;
+}
+
+.hireme-btn-container:hover{
+    bottom: 4px;
+    right: 4px;
+    box-shadow: 4px 4px red;
 }
 
 .hireme-btn-container p{  
@@ -112,7 +120,7 @@ header{
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
 }
 
@@ -219,7 +227,7 @@ section h1{
 }
 
 .resume-card{
-    width: 80%;
+    width: 90%;
     height: 120px;
     margin: 25px 0;
     padding: 10px 0;
@@ -461,16 +469,17 @@ span.footeryear{
     }
 
 
+
 }
 
 @media screen and (max-width: 768px){
 
-    p{
+    p, section ul li{
         font-size: 0.9em;
     }
 
     header{
-        padding: 40px 0;
+        padding: 0 0 40px 0;
         text-align: center;
         height: auto;
     }
