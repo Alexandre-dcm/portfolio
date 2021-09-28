@@ -108,7 +108,7 @@ div#mainnav{
         padding: 40px;
         border-bottom-left-radius: 5px;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.3s ease-in-out;
     }
 
     .navlinks li{
@@ -127,6 +127,7 @@ div#mainnav{
 
     .nav-active{
         transform: translateX(0%);
+
     }
 
     .nav-active li, .nav-active .linkdiv div{

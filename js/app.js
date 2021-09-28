@@ -1,3 +1,4 @@
+const hireMeBtn = document.querySelector('.hireme-btn-container');
 const navSlide = () => {
 
     const burger = document.querySelector('.burger');
@@ -10,5 +11,72 @@ const navSlide = () => {
 }
 
 navSlide();
+
+ /*    const rainbowHovering = hoveredItem => {
+
+        hoveredItem.addEventListener('mouseover', function() {
+
+            const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+                let hexColor = '#';
+
+            for(let i = 0; i < 6; i++){
+                hexColor += hex[Math.floor(Math.random() * hex.length)];
+            };
+
+            hoveredItem.style["boxShadow"] = `4px 4px ${hexColor}`;
+
+        });
+    }
+
+
+
+rainbowHovering(hireMeBtn);  */
+
+
+const skills = document.querySelectorAll(".skill-unit-content");
+
+
+    skills.forEach(function(skill) {
+
+        skill.addEventListener('click', function displayBubble(){
+        
+            skill.classList.toggle('clickedItem');
+            clickedItemVar = document.querySelector('.clickedItem');
+            const bubble = clickedItemVar.querySelector('.bubble');
+            bubble.classList.toggle('skill-info');
+            displayBubble();
+
+        });
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*   skill.addEventListener('click', function(){
+        
+
+        
+
+        
+        
+        
+       skill.classList.toggle('clickedItem');
+        clickedItemVar = document.querySelector('.clickedItem');
+        const bubble = clickedItemVar.querySelector('.bubble');
+        bubble.classList.toggle('skill-info'); 
+        
+    });   */
+
+
 
 

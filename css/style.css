@@ -3,6 +3,7 @@
 html{
     font-family: 'Oxygen', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1{
@@ -18,6 +19,11 @@ body{
 section{
     position: relative;
     padding: 50px 0;
+    box-shadow: 2px 2px 5px rgba(172, 172, 172, 0.6);
+}
+
+.hidden{
+    display: none;
 }
 
 .test{
@@ -97,7 +103,7 @@ header{
 .hireme-btn-container:hover{
     bottom: 4px;
     right: 4px;
-    box-shadow: 4px 4px red;
+    box-shadow: 4px 4px #ED5252;
 }
 
 .hireme-btn-container p{  
@@ -148,6 +154,7 @@ section#skills{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 #skills-section-container{
@@ -183,6 +190,8 @@ div.skill-unit{
     padding: 3px;
     margin-bottom: 15px;
     background-color: white;
+    cursor: pointer;
+    position: relative;
 }
 
 .l-skill-unit-content{
@@ -198,6 +207,8 @@ div.skill-unit{
     padding: 3px;
     margin-bottom: 15px;
     background-color: white;
+    cursor: pointer;
+    position: relative;
 }
 
 p.skill-desc, em{
@@ -218,6 +229,24 @@ section h1{
     margin: 15px;
 }
 
+.skill-info{
+    display: block;
+    padding: 20px;
+    box-shadow: 3px 3px 3px rgba(112, 112, 112, 0.4) ;
+    background: rgb(255,193,234);
+    background: linear-gradient(130deg, rgb(193, 222, 255) 0%, rgb(255, 174, 169) 100%);
+    height: auto;
+    width: max-content;
+    position: absolute;
+    transition: 1s;
+    top: -20px;
+    left: 80%;
+    color: rgba(43, 43, 43, 1);
+    z-index: 100;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
 /*** RESUME ***/
 
 #resume{
@@ -225,7 +254,11 @@ section h1{
     background-color: #ffffff;
     background-size: 10px 10px;
     background-image: repeating-linear-gradient(45deg, #f1f1f1 0, #f1f1f1 1px, #ffffff 0, #ffffff 50%);
+    z-index: -1;
+
 }
+
+
 
 .resume-card{
     width: 90%;
@@ -288,9 +321,12 @@ section h1{
     cursor: default;
 }
 
+
+
 .skill-unit:hover{
     transform: scale(1.05);
     transition-duration: 0.1s;
+    z-index: 10;
 }
 
 .resume-card-img-div{
@@ -545,3 +581,6 @@ span.footeryear{
 
 
 }
+
+
+
