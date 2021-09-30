@@ -33,6 +33,10 @@ section{
 .test2{
     border: 1px solid blue;
 }
+.test3{
+    border: 1px solid rgb(0, 145, 0);
+}
+
 
 a:hover{
     color: rgb(255, 101, 101);
@@ -84,7 +88,10 @@ header{
 
 
 #header-div{
-    height: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #intro-part > *{
@@ -94,7 +101,7 @@ header{
 .hireme-btn-container{
     height: 50px;
     width: 150px;
-    background: rgb(65, 65, 65);
+    background-color: rgba(30, 30, 30, 0.5);
     color: rgb(255, 255, 255);
     position: relative;
     border: 2px solid rgb(255, 255, 255) ;
@@ -121,14 +128,19 @@ header{
 
 
 #photo-div img{
-    filter: drop-shadow(5px 5px 5px rgba(43, 43, 43, 0.6));
+    filter: drop-shadow(3px 3px 4px rgba(43, 43, 43, 0.6));
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
     height: auto;
-    
-    
+}
+
+#photo-div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
 }
 
 h1#header-h1{
@@ -142,6 +154,36 @@ p#header-main-desc{
 
 p#header-second-desc{
     font-size: 1.5rem;
+}
+
+.social{
+    display: flex;
+}
+.socials{
+    display: flex;
+    bottom: 50px;
+    right: 50px;
+    width: 130px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.socials div{
+    width: 35px;
+    height: 35px;
+}
+
+.socials div img{
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    position: relative;
+}
+
+.socials div img:hover{
+    filter: drop-shadow(3px 3px 5px rgba(43, 43, 43, 0.5));
+    right: 2px;
+    bottom: 2px;
 }
 
 /*** SKILLS ***/
@@ -198,8 +240,8 @@ div.skill-unit{
 .l-skill-unit-content{
     border-radius: 10px;
     box-shadow: 2px 2px 5px grey;
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -230,22 +272,23 @@ section h1{
     margin: 15px;
 }
 
-.skill-info{
+.skill-unit-content:hover > .bubble{
     display: block;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 3px 3px 3px rgba(112, 112, 112, 0.4) ;
     background: rgb(255,193,234);
     background: linear-gradient(130deg, rgb(193, 222, 255) 0%, rgb(255, 174, 169) 100%);
     height: auto;
     width: max-content;
+    max-width: 400px;
     position: absolute;
     transition: 1s;
     top: -20px;
     left: 80%;
     color: rgba(43, 43, 43, 1);
     z-index: 100;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1em;
+    transition: 1s ease-in;
 }
 
 /*** RESUME ***/
@@ -485,13 +528,6 @@ footer{
     height: 100%;
 }
 
-.testflex{
-    flex-direction: column;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-}
-
 span.footeryear{
     color: orange;
 }
@@ -578,6 +614,13 @@ span.footeryear{
         width: 100%;
         min-width: auto;
     }
+
+
+}
+
+@media screen and (max-width: 992px){
+
+
 
 
 }

@@ -9,13 +9,14 @@ div#mainnav{
     margin: 0 auto;
     width: 1140px;
     height: 50px;
-    border-right: solid 3px;
-    border-bottom: solid 3px;
-    border-left: solid 3px;
-    border-color: rgb(43, 43, 43);
+    border-radius: 3px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    border-left: solid 2px;
+    border-color: rgb(233, 233, 233);
     background-color: rgba(30, 30, 30, 0.5);
-    color: white;
-    box-shadow: 2px 2px 5px grey;
+    color: rgb(233, 233, 233);
+    box-shadow: 2px 2px 3px rgba(30, 30, 30, 0.5);
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -38,8 +39,8 @@ div#mainnav{
 
 .nav-header h4{
     font-weight: bold;
-    font-size: 1.5em;
-    letter-spacing: 4px;
+    font-size: 1.7em;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -54,8 +55,14 @@ div#mainnav{
     display: none;
 }
 
+.linkdiv{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
 .linkdiv div{
     display: none;
+    
 }
 
 /*** RESPONSIVE ***/
