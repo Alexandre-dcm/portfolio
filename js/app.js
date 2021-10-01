@@ -30,7 +30,7 @@ navSlide();
 
 
 
-rainbowHovering(hireMeBtn);  */
+rainbowHovering(hireMeBtn);  
 
 
 const skills = document.querySelectorAll(".skill-unit-content");
@@ -49,6 +49,20 @@ const skills = document.querySelectorAll(".skill-unit-content");
         });
 
     });
+
+    */
+
+    function checkOverflow(elem) {
+        const elemWidth = elem.getBoundingClientRect().width
+        const parentWidth = elem.parentElement.getBoundingClientRect().width
+    
+        if (elemWidth > parentWidth){
+            console.log('overflow!');
+        }
+    }
+    const bubble = document.querySelector('.nav-links');
+
+    checkOverflow(bubble);
 
 
 
