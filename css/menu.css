@@ -60,7 +60,7 @@ div#mainnav{
     font-size: 1.1em;
 }
 
-.linkdiv div{
+.linkdiv .underline{
     display: none;
     
 }
@@ -118,10 +118,9 @@ div#mainnav{
         transition: transform 0.3s ease-in-out;
     }
 
-    .navlinks li{
+    .navlinks .menu-li{
         font-size: 1.5em;
         font-weight: bold;
-        opacity: 0
     }
 
     .underline, .burger{
@@ -129,7 +128,9 @@ div#mainnav{
     }
 
     .linkdiv{
-        text-align: end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .nav-active{
@@ -137,11 +138,21 @@ div#mainnav{
 
     }
 
-    .nav-active li, .nav-active .linkdiv div{
+    .menu-li a{
+        padding: 15px 0 15px 15px;
+    }
+
+    .nav-active .linkdiv .underline{
+        opacity: 1;
+        width: calc(35vw + 15px);
+        margin: none;
+    }
+
+    .nav-active .menu-li{
         opacity: 1;
     }
 
-    .linkdiv div{
+    .linkdiv .underline{
         display: block;
         opacity: 0;
     }

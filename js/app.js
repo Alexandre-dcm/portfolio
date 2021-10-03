@@ -1,18 +1,31 @@
 const hireMeBtn = document.querySelector('.hireme-btn-container');
+const about = document.querySelector('.about');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.navlinks');
+
 const navSlide = () => {
 
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navlinks');
     const navLinks = document.querySelector('.navlinks li');
     // Toggle Nav
         burger.addEventListener('click', function (){
             nav.classList.toggle('nav-active');
         });
+    
+    about.addEventListener('click', function (){
+        if(nav.classList.contains('nav-active')){
+            nav.classList.remove('nav-active'); 
+        }
+    });
+
 }
 
 navSlide();
 
- /*    const rainbowHovering = hoveredItem => {
+
+
+/*
+
+     const rainbowHovering = hoveredItem => {
 
         hoveredItem.addEventListener('mouseover', function() {
 
@@ -31,12 +44,10 @@ navSlide();
 
 
 rainbowHovering(hireMeBtn);  
+ 
 
 
-const skills = document.querySelectorAll(".skill-unit-content");
-
-
-    skills.forEach(function(skill) {
+   skills.forEach(function(skill) {
 
         skill.addEventListener('click', function displayBubble(){
         
@@ -50,7 +61,7 @@ const skills = document.querySelectorAll(".skill-unit-content");
 
     });
 
-    */
+    
 
     function checkOverflow(elem) {
         const elemWidth = elem.getBoundingClientRect().width
@@ -64,6 +75,7 @@ const skills = document.querySelectorAll(".skill-unit-content");
 
     checkOverflow(bubble);
 
+    */
 
 
 

@@ -45,27 +45,19 @@ a:hover{
 .underline {
     height: 2px;
     width: 9em;
-    background: rgb(255, 189, 66);
     margin: 0 auto;
 }
-
+.underline1{
+    background: rgb(255, 189, 66);
+}
 .underline2 {
-    height: 2px;
-    width: 9em;
     background: rgb(255, 172, 117);
-    margin: 0 auto;
 }
 .underline3 {
-    height: 2px;
-    width: 9em;
     background: rgb(255, 142, 142);
-    margin: 0 auto;
 }
 .underline4 {
-    height: 2px;
-    width: 9em;
     background: rgb(255, 125, 85);
-    margin: 0 auto;
 }
 
 
@@ -214,6 +206,7 @@ section#skills{
     height: auto;
     filter: drop-shadow(3px 3px 5px rgba(43, 43, 43, 0.6));
 }
+
 
 .skill-unit-content{
     border-radius: 10px;
@@ -533,7 +526,7 @@ span.footeryear{
 }
 
     @media screen and (min-width: 1400px){
-
+  
 
     .skill-unit-content:hover > .bubble{
         display: block;
@@ -545,13 +538,11 @@ span.footeryear{
         width: max-content;
         max-width: 400px;
         position: absolute;
-        transition: 1s;
         top: -20px;
         left: 80%;
         color: rgba(43, 43, 43, 1);
         z-index: 100;
         font-size: 1em;
-        transition: 1s ease-in;
     }
     
     .skill-unit-content:hover > .bubble-left{
@@ -629,6 +620,8 @@ span.footeryear{
         flex-wrap: wrap;
     }
 
+
+
 }
 
 @media screen and (max-width: 1400px){
@@ -637,7 +630,7 @@ span.footeryear{
         height: auto;
     }
     .skill-unit{
-        margin: 15px;
+        margin: 40px;
     }
 
 }
