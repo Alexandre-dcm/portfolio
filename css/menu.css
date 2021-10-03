@@ -37,7 +37,7 @@ div#mainnav{
     flex-basis: 45%;
 } 
 
-.nav-header h4{
+nav h4{
     font-weight: bold;
     font-size: 1.7em;
     letter-spacing: 2px;

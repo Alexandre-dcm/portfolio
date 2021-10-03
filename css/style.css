@@ -192,11 +192,7 @@ section#skills{
 
 }
 
-#skills-section-container{
-    width: 100%;
-}
-
-#skills-section-container > *{
+.skills-section-container > *{
     margin-bottom: 5%;
 }
 
@@ -253,16 +249,12 @@ section h1{
     text-align: center;
 }
 
-.skills-container{
+.skills-container, .l-skills-container, .skills-section-container{
     width: 100%;
 }
 
 .skills-h1-desc{
     margin: 15px;
-}
-
-.l-skills-container{
-    width: 100%;
 }
 
 
