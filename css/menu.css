@@ -1,10 +1,6 @@
 
 nav{
-    width: 100%;
     margin: 0 auto;
-}
-
-div#mainnav{
     display: block;
     margin: 0 auto;
     width: 1140px;
@@ -21,12 +17,8 @@ div#mainnav{
     justify-content: space-around;
     position: relative;
     align-items: center;
+
 } 
-
-
-#mainnav{
-    height: 100%;
-}
 
 
 .navlinks{
@@ -65,6 +57,8 @@ nav h4{
     
 }
 
+
+
 /*** RESPONSIVE ***/
 
 @media screen and (max-width: 1200px){
@@ -75,28 +69,20 @@ nav h4{
         margin-bottom: 40px;
     }
 
-    div#mainnav{
-        width: 100%;
-    }
-
 
 }
 
 
 @media screen and (max-width: 768px){
   
-    div#mainnav{
-        box-shadow: none;
-        border: none;
-        background-color: rgb(60, 60, 60);
-        height: 100%;
-
-    }
 
     nav{
         position: relative;
         height: 75px;
         margin-bottom: 40px;
+        box-shadow: none;
+        border: none;
+        background-color: rgb(60, 60, 60);
     }
 
     .navlinks{
@@ -145,7 +131,6 @@ nav h4{
     .nav-active .linkdiv .underline{
         opacity: 1;
         width: calc(35vw + 15px);
-        margin: none;
     }
 
     .nav-active .menu-li{
@@ -161,4 +146,21 @@ nav h4{
         overflow-x: hidden;
     }
 
+}
+
+
+@media screen and (min-width: 768px){
+    .sticky {
+        width: 100%;
+        height: 55px;
+        background-color: rgb(238, 238, 238);
+        color: rgb(0, 0, 0);
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: background-color 0.4s ease-in;
+        padding: 0 10vw;
+    }
+    
 }

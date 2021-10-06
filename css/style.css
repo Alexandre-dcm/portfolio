@@ -92,11 +92,18 @@ header{
 
 .hireme-btn-container{
     height: 50px;
-    width: 150px;
+    width: max-content;
     background-color: rgba(30, 30, 30, 0.5);
     color: rgb(255, 255, 255);
     position: relative;
     border: 2px solid rgb(255, 255, 255) ;
+    padding : 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hiremelink p{
+    line-height: 36px;
 }
 
 .hireme-btn-container:hover{
@@ -107,7 +114,6 @@ header{
 
 .hireme-btn-container p{  
     font-size: 1.3em;
-    line-height: 50px;
     font-weight: bold;
 }
 
@@ -642,6 +648,7 @@ span.footeryear{
 
 
 }
+
 
 
 
