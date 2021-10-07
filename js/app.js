@@ -2,6 +2,7 @@ const hireMeBtn = document.querySelector('.hireme-btn-container');
 const about = document.querySelector('.about');
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.navlinks');
+const navBar = document.querySelector('nav');
 
 const navSlide = () => {
 
@@ -17,21 +18,22 @@ const navSlide = () => {
         }
     });
 
+    window.addEventListener('scroll', () => {
+        navBar.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    window.addEventListener('scroll', () => {
+        navBar.classList.toggle('fixed', window.scrollY > 0);
+    });
+
+
 }
 
 navSlide();
 
 
-    window.addEventListener('scroll', () => {
-        let nav = document.querySelector('nav');
-        nav.classList.toggle('sticky', window.scrollY > 0);
-    });
-
-
-
 
 /*
-
      const rainbowHovering = hoveredItem => {
 
         hoveredItem.addEventListener('mouseover', function() {
@@ -83,32 +85,6 @@ rainbowHovering(hireMeBtn);
     checkOverflow(bubble);
 
     */
-
-
-
-
-
-
-
-
-
-
-
-
-   /*   skill.addEventListener('click', function(){
-        
-
-        
-
-        
-        
-        
-       skill.classList.toggle('clickedItem');
-        clickedItemVar = document.querySelector('.clickedItem');
-        const bubble = clickedItemVar.querySelector('.bubble');
-        bubble.classList.toggle('skill-info'); 
-        
-    });   */
 
 
 
