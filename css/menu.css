@@ -120,7 +120,8 @@ nav h4{
         right: 0;
         height: 55vh;
         min-height: 450px;
-        width: 65%;
+        width: 75vw;
+        max-width: 430px;
         top: 75px;
         background-color: rgb(60, 60, 60);
         display: flex;
@@ -128,7 +129,7 @@ nav h4{
         align-items: flex-end;
         justify-content: space-around;
         z-index: 10;
-        padding: 40px;
+        padding: 40px 40px 40px 10px;
         border-bottom-left-radius: 5px;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
