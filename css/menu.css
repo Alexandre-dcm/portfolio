@@ -3,7 +3,7 @@ nav{
     margin: 0 auto;
     display: block;
     margin: 0 auto;
-    width: 1140px;
+    width: 100%;
     height: 50px;
     border-radius: 3px;
     border-right: solid 2px;
@@ -17,7 +17,7 @@ nav{
     justify-content: space-around;
     position: relative;
     align-items: center;
-
+    transition: top 0.3s;
 } 
 
 .fixed{
@@ -114,7 +114,7 @@ nav h4{
 
 
 @media screen and (max-width: 768px){
-  
+
 
     nav{
         position: relative;
@@ -219,6 +219,4 @@ nav h4{
         border-radius: 0;
     }
 
-    
-    
 }

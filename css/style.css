@@ -281,7 +281,7 @@ section h1{
 }
 
 .languages h2{
-    margin: 17px 0 15px 0;
+    margin: 17px 0 13px 0;
 }
 
 .switch-lang .act{
@@ -577,6 +577,13 @@ span.footeryear{
 
     #resume ul li, #resume p{
         font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    #resume .workexp-title {
+        margin-bottom: 30px;
     }
 }
 
