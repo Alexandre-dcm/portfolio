@@ -11,6 +11,17 @@ h1{
     font-weight: 700;
 }
 
+h3{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(43, 43, 43);
+}
+.smaller{
+    font-weight: lighter;
+    font-size: 1rem;
+
+}
+
 body{
     position: relative;
     overflow-x: hidden;
@@ -141,16 +152,16 @@ header{
 }
 
 h1#header-h1{
-    font-size: 7rem;
+    font-size: 5.5rem;
     width: 100%;
 }
 
 h2#header-main-desc{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 p#header-second-desc{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .social{
@@ -190,62 +201,13 @@ section#skills{
     color: white;
     height: 100vh;
     min-height: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     z-index: 1;
 
 }
 
-.skills-section-container > *{
-    margin-bottom: 5%;
-}
-
-
-.skill-unit img{
-    width: 60%;
-    height: auto;
-    filter: drop-shadow(3px 3px 5px rgba(43, 43, 43, 0.6));
-}
-
-
-.skill-unit-content{
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    margin-bottom: 15px;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-}
-
-.l-skill-unit-content{
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px grey;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    margin-bottom: 15px;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-}
-
-
-p.skill-desc, em{
-    font-weight: bold;
+.skills-text-container{
+    display: block;
+    margin-bottom: 100px;
 }
 
 section h1{
@@ -254,15 +216,106 @@ section h1{
     text-align: center;
 }
 
-.skills-container, .l-skills-container, .skills-section-container{
-    width: 100%;
+.skill-div{
+    background-color: #ffffff;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #f1f1f1 0, #f1f1f1 1px, #ffffff 0, #ffffff 50%);
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 50px;
+}
+
+.skill-icon{
+    width: 140px;
+    height: 140px;
+    top: -70px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 70px);
+    background: rgb(255,193,234);
+    background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icon img{
+    width: 60%;
+    height: auto;
+    opacity: 0.8;
+    -webkit-filter: drop-shadow(1px 1px 2px #666); 
+	filter: drop-shadow(1px 1px 2px #666);
 }
 
 .skills-h1-desc{
     margin: 15px;
 }
 
+.skills-section{
+    width: 100%;
+    height: auto;
+}
 
+.skill-box{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 8px 0; 
+}
+
+.skill-img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px ;
+}
+.skill-img img{
+    width: auto;
+    height: 95%;
+}
+
+.skill-img img.long{
+    width: 100%;
+    height: auto;
+}
+
+.skill-desc{
+    width: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+
+.skill-desc p{
+    line-height: 58px;
+}
+
+.skill.box-container{
+    height: 100%;
+}
+
+.skills-container-xl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /*** RESUME ***/
 
@@ -302,7 +355,7 @@ section h1{
     background: linear-gradient(130deg, rgba(255,193,234,1) 0%, rgba(255,220,149,1) 100%);
 }
 
-.lang-container:hover{
+.lang-container:hover, .skill-div:hover{
     box-shadow: 4px 4px rgb(255, 142, 97);
     border-bottom: none;
     border-right: none;
@@ -657,7 +710,15 @@ span.footeryear{
     }
 
     h1#header-h1{
-        font-size: 5em;
+        font-size: 3.5em;
+    }
+
+    h2#header-main-desc{
+        font-size: 2rem;
+    }
+    
+    p#header-second-desc{
+        font-size: 1.2rem;
     }
 
     .resume-card{
@@ -695,6 +756,10 @@ span.footeryear{
         margin: 15px 50px 15px 50px;
     }
 
+    .skill-div{
+        margin: 50px 15px;
+    }
+
 }
 
 @media screen and (max-width: 350px){
@@ -724,6 +789,24 @@ span.footeryear{
 
     p#header-second-desc{
         font-size: 1rem;
+    }
+
+    .skill-div{
+        min-width: 200px;
+        margin: 50px 0;
+    }
+
+    .skill-desc{
+        font-size: 1.3rem;
+    }
+
+    .smaller{
+        font-size: 0.8rem;
+    }
+
+    .skill-img{
+        width: 30%;
+        margin-right: 15px ;
     }
 
 }
