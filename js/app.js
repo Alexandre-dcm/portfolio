@@ -67,66 +67,6 @@ function navBarHiding() {
     }
 }
 
-navBarHiding();  // bug ! le if (width < 768) ne marche pas.
-
-
-
-    
-
-
-/*
-     const rainbowHovering = hoveredItem => {
-
-        hoveredItem.addEventListener('mouseover', function() {
-
-            const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-                let hexColor = '#';
-
-            for(let i = 0; i < 6; i++){
-                hexColor += hex[Math.floor(Math.random() * hex.length)];
-            };
-
-            hoveredItem.style["boxShadow"] = `4px 4px ${hexColor}`;
-
-        });
-    }
-
-
-
-rainbowHovering(hireMeBtn);  
- 
-
-
-   skills.forEach(function(skill) {
-
-        skill.addEventListener('click', function displayBubble(){
-        
-            skill.classList.toggle('clickedItem');
-            clickedItemVar = document.querySelector('.clickedItem');
-            const bubble = clickedItemVar.querySelector('.bubble');
-            bubble.classList.toggle('skill-info');
-            displayBubble();
-
-        });
-
-    });
-
-    
-
-    function checkOverflow(elem) {
-        const elemWidth = elem.getBoundingClientRect().width
-        const parentWidth = elem.parentElement.getBoundingClientRect().width
-    
-        if (elemWidth > parentWidth){
-            console.log('overflow!');
-        }
-    }
-    const bubble = document.querySelector('.nav-links');
-
-    checkOverflow(bubble);
-
-    */
-
-
+navBarHiding();
 
 
